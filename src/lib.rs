@@ -16,8 +16,6 @@ pub fn ds(input: TokenStream) -> TokenStream
     let params = syn::parse_macro_input!(input as MacroParams);
     let args_number = params.args.len();
     let params_args = params.args;
-
-    println!("{}", args_number); 
    
     let nargs = if args_number == 0
     {
