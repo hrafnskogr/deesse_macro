@@ -17,7 +17,7 @@ impl Parse for MacroParams
     {
         let sysc: LitStr = input.parse()?;
 
-        let colon: Option<Token![,]> = match input.parse()
+        let _: Option<Token![,]> = match input.parse()
         {
             Ok(token) => Some(token),
             _ => None,

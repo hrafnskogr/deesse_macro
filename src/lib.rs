@@ -1,10 +1,8 @@
 extern crate proc_macro;
 
 mod macroparams;
-mod salt;
 
 use proc_macro::TokenStream;
-use syn::Ident;
 use quote::{quote, format_ident};
 use sha256::digest;
 use deesse;
