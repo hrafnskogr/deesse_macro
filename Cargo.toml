@@ -12,6 +12,6 @@ proc-macro = true
 syn = { version=">=1.0.84", features=["full", "extra-traits"] }
 quote = ">=1.0.10"
 proc-macro2 = ">=1.0.34"
-deesse = { path = "../deesse" }
+deesse = { git = "https://github.com/hrafnskogr/deesse" }
 sha256 = "1.0.3"
 
