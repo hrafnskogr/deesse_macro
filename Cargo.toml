@@ -1,0 +1,17 @@
+[package]
+name = "deesse_macro"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = { version=">=1.0.84", features=["full", "extra-traits"] }
+quote = ">=1.0.10"
+proc-macro2 = ">=1.0.34"
+deesse = { path = "../deesse" }
+sha256 = "1.0.3"
+
